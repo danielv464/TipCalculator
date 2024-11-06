@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:hint="Tip Calculator"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/amtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Base"
+            android:layout_marginLeft="-160dp"
+            android:layout_marginTop="50dp"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/billAmt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-31dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/text_bubble"
+            android:hint=" Bill Amount"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-145dp"
+            android:layout_marginTop="20dp"
+            android:hint="Percent"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint=" 0"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            android:background="@drawable/text_bubble"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-30dp"/>
+        <SeekBar
+            android:id="@+id/tipSlider"
+            android:layout_width="200dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tip        "
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:id="@+id/tipAmt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint=" 0"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            android:background="@drawable/text_bubble"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="-34dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total    "
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            android:layout_marginRight="142dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/totalAmt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint=" 0"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/text_bubble"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-34dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
